@@ -19,7 +19,7 @@ export default function LayoutGuidelinesPage() {
             <div className='space-y-2'>
               <h1 className='text-2xl font-bold tracking-tight md:text-3xl'>Layout</h1>
               <p className='max-w-2xl text-sm text-muted-foreground'>
-                GoBasile's layout system keeps every interface deliberate, organized, and
+                GoBasile&apos;s layout system keeps every interface deliberate, organized, and
                 utilitarian.
               </p>
             </div>

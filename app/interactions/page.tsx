@@ -342,7 +342,7 @@ export default function InteractionsPage() {
 
         {/* Do & don't */}
         <section className='space-y-4 border-t border-border pt-6'>
-          <h2 className='text-lg font-semibold'>Do &amp; don't</h2>
+          <h2 className='text-lg font-semibold'>Do &amp; don&apos;t</h2>
           <div className='grid gap-4 md:grid-cols-2'>
             <div className='rounded-xl border border-border bg-card p-4 md:p-5'>
               <p className='text-sm font-medium'>Do</p>
@@ -355,7 +355,7 @@ export default function InteractionsPage() {
               </ul>
             </div>
             <div className='rounded-xl border border-border bg-card p-4 md:p-5'>
-              <p className='text-sm font-medium'>Don't</p>
+              <p className='text-sm font-medium'>Don&apos;t</p>
               <ul className='mt-3 space-y-1 text-xs text-muted-foreground'>
                 <li>• Animate purely for style or decoration.</li>
                 <li>• Delay feedback or fade in critical UI too slowly.</li>

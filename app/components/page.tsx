@@ -141,13 +141,13 @@ export default function ComponentsPage() {
                 </li>
                 <li>
                   <span className='font-medium text-foreground'>Secondary:</span>{' '}
-                  <code className='rounded bg-muted/60 px-1'>variant="outline"</code> for neutral or
-                  cancel flows.
+                  <code className='rounded bg-muted/60 px-1'>variant=&quot;outline&quot;</code> for
+                  neutral or cancel flows.
                 </li>
                 <li>
                   <span className='font-medium text-foreground'>Destructive:</span>{' '}
-                  <code className='rounded bg-muted/60 px-1'>variant="destructive"</code> for
-                  irreversible actions.
+                  <code className='rounded bg-muted/60 px-1'>variant=&quot;destructive&quot;</code>{' '}
+                  for irreversible actions.
                 </li>
               </ul>
             </div>
@@ -314,7 +314,7 @@ export default function ComponentsPage() {
           </div>
         </section>
 
-        {/* Do & don&apos;t */}
+        {/* Do & don't */}
         <section className='space-y-4 border-t border-border pt-6'>
           <h2 className='text-lg font-semibold'>Do & don&apos;t</h2>
           <div className='grid gap-4 md:grid-cols-2'>

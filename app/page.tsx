@@ -317,16 +317,16 @@ export default function Page() {
                 </p>
                 <ul className='mt-1 space-y-1 text-sm'>
                   <li>
-                    <span className='font-medium text-foreground'>Primary:</span> variant="default"
+                    <span className='font-medium text-foreground'>Primary:</span> variant=&quot;default&quot;
                     for key actions
                   </li>
                   <li>
                     <span className='font-medium text-foreground'>Secondary:</span>{' '}
-                    variant="outline" for neutral or cancel actions
+                    variant=&quot;outline&quot; for neutral or cancel actions
                   </li>
                   <li>
                     <span className='font-medium text-foreground'>Destructive:</span>{' '}
-                    variant="destructive" only for irreversible actions
+                    variant=&quot;destructive&quot; only for irreversible actions
                   </li>
                 </ul>
                 <p className='mt-2 text-xs'>
