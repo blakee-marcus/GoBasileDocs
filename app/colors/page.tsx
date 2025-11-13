@@ -36,21 +36,25 @@ const stateColors = [
     state: 'Success',
     token: 'text-emerald-500 / bg-emerald-500/10',
     usage: 'Confirmations, positive states, completed steps.',
+    swatchClass: 'bg-emerald-500/15 ring-1 ring-emerald-500/60',
   },
   {
     state: 'Warning',
     token: 'text-amber-500 / bg-amber-500/10',
     usage: 'Caution messages that are not destructive.',
+    swatchClass: 'bg-amber-500/15 ring-1 ring-amber-500/60',
   },
   {
     state: 'Error',
     token: 'text-destructive / bg-destructive/10',
     usage: 'Destructive actions, validation errors, and blocking alerts.',
+    swatchClass: 'bg-destructive/10 ring-1 ring-destructive/60',
   },
   {
     state: 'Info',
     token: 'text-sky-500 / bg-sky-500/10',
     usage: 'Neutral notices, helper banners, and inline tips.',
+    swatchClass: 'bg-sky-500/15 ring-1 ring-sky-500/60',
   },
 ];
 
@@ -176,6 +180,11 @@ export default function ColorPage() {
         <div className='grid gap-4 md:grid-cols-3'>
           {surfaces.map((surface) => (
             <div key={surface.token} className='rounded-lg border border-border/70 bg-muted/40 p-4'>
+              {/* Color swatch */}
+              <div
+                className={`mb-3 h-10 w-full rounded-md border border-border/60 ${surface.token}`}
+              />
+
               <p className='text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground'>
                 {surface.role}
               </p>
@@ -203,7 +212,9 @@ export default function ColorPage() {
             <div
               key={state.state}
               className='flex items-start gap-3 rounded-lg border border-border/70 bg-muted/40 p-3'>
-              <div className='mt-1 h-6 w-6 rounded-full border border-border/60 bg-gradient-to-br from-background to-muted' />
+              <div
+                className={`mt-1 h-6 w-6 rounded-full border border-border/60 ${state.swatchClass}`}
+              />
               <div className='space-y-1 text-sm'>
                 <p className='font-medium text-foreground'>{state.state}</p>
                 <p className='text-xs font-mono text-muted-foreground'>{state.token}</p>
@@ -242,12 +253,12 @@ export default function ColorPage() {
         </div>
       </section>
 
-      {/* Summary */}
-      <section className='rounded-xl border border-dashed border-border bg-muted/40 p-5 text-sm'>
+      {/* Summary - updated for stronger contrast */}
+      <section className='rounded-xl border border-border/80 bg-card/90 p-5 text-sm shadow-sm'>
         <p className='text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground'>
           Summary
         </p>
-        <p className='mt-2 max-w-3xl text-sm text-muted-foreground'>
+        <p className='mt-2 max-w-3xl text-sm text-foreground'>
           GoBasile is anchored by Basil and Copper on top of a neutral foundation. Use these tokens
           as the single source of truth for color decisions so the product feels grounded, precise,
           and consistently utilitarian.

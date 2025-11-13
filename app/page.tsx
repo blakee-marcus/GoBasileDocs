@@ -317,8 +317,8 @@ export default function Page() {
                 </p>
                 <ul className='mt-1 space-y-1 text-sm'>
                   <li>
-                    <span className='font-medium text-foreground'>Primary:</span> variant=&quot;default&quot;
-                    for key actions
+                    <span className='font-medium text-foreground'>Primary:</span>{' '}
+                    variant=&quot;default&quot; for key actions
                   </li>
                   <li>
                     <span className='font-medium text-foreground'>Secondary:</span>{' '}
@@ -431,19 +431,40 @@ export default function Page() {
       </section>
 
       {/* Implementation note */}
-      <section className='rounded-xl border border-dashed border-border bg-muted/40 p-5 text-sm'>
+      <section className='rounded-xl border border-border bg-card/80 p-6 text-sm'>
         <p className='text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground'>
           Implementation
         </p>
-        <p className='mt-2 text-sm text-muted-foreground max-w-3xl'>
-          This guide scales with the GoBasile component library and should be treated as the single
-          source of truth for new UI. Every new component, page, or state should reference these
-          guidelines before implementation.
-        </p>
-        <p className='mt-3 text-xs font-medium text-muted-foreground'>
-          Design with intent. Each decision should make GoBasile feel like a precise, reliable tool
-          built by professionals for professionals.
-        </p>
+
+        <div className='mt-3 grid gap-4 items-start md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]'>
+          <div>
+            <h3 className='text-sm font-semibold text-foreground'>How to apply these guidelines</h3>
+            <p className='mt-2 text-sm text-foreground leading-relaxed max-w-2xl'>
+              This guide scales with the GoBasile component library and is the single source of
+              truth for new UI. Every new component, page, or state should reference these
+              guidelines before implementation.
+            </p>
+            <p className='mt-3 text-xs font-medium text-muted-foreground'>
+              Design with intent. Each decision should make GoBasile feel like a precise, reliable
+              tool built by professionals for professionals.
+            </p>
+          </div>
+
+          <ul className='rounded-lg border border-border/70 bg-muted/40 p-3 text-xs text-muted-foreground space-y-2'>
+            <li>
+              <span className='font-medium text-foreground'>Before you build:</span> Check
+              Principles, Layout, and Components.
+            </li>
+            <li>
+              <span className='font-medium text-foreground'>While designing:</span> Use the defined
+              tokens for color, spacing, and type.
+            </li>
+            <li>
+              <span className='font-medium text-foreground'>Before shipping:</span> Confirm states,
+              feedback, and error handling match this guide.
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );
